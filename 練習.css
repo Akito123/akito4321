@@ -1,0 +1,270 @@
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif; 
+  padding: 0;
+}
+
+.header-top{
+	display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: black;
+    position: fixed;
+    height: 80px!important;
+    overflow: hidden;
+    z-index: 10;
+	opacity:0.8;
+}
+#form2{
+position:relative;
+max-width:100px;	
+margin-bottom:12px;
+margin-top:7px;
+float:right;
+}
+#sbox2{
+height:38px;
+width:220px;
+padding:0 3px; 
+position:absolute; 
+right:0;
+border-radius:40px;
+outline:0;
+background:#eee;	
+padding-top:3px;
+padding-bottom:3px;
+}
+#sbtn2{
+height:50px;
+position:absolute; 
+right:0;/*アイコン左右の位置調整*/
+top:0;
+background:none;
+color:#666;
+border:none;
+font-size:20px;/*アイコンサイズ*/
+padding-top:25px;
+padding-bottom:25px;
+margin-right:90px;
+cursor: pointer;
+}
+#sbtn5:hover{
+color:#7fbfff;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0
+    width: 250px;
+    margin-top: 80px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: black;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid white;
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+	
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: white;
+}
+.sidebarMenuInner li a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+	
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top:26px;
+    left: 15px;
+    height: 30px;/*アイコンの高さ*/
+    width: 30px;/*アイコンの長さ*/
+	margin-left:23px;
+	
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 4px;/*アイコンの線の太さ*/
+    width: 100%;
+    background-color: white;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 10px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 10px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -17px;/*XのアイコンがちゃんとXになるためアイコンが大きくなるほど数字大きくする*/
+}
+
+.header-down{
+	padding:300px;
+	background-image:url("images/cod.jpg.pagespeed.ce.MmfNz6PYD9.jpg");
+	background-size:cover;
+	color:white;
+	opacity:0.9;
+}
+.header h1{
+	padding-top:80px;
+	opacity:0.4;
+	font-size:45px;	
+}
+.header p{
+	opacity:0.4;
+	font-size:25px;
+}
+.main {
+  padding: 100px 80px;
+  background-color:#333333;
+}
+
+.contents {
+  height: 1000px;
+  padding:80px 0;
+  
+}
+
+.section-title {
+  border-bottom: 2px solid white;
+  font-size: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color:white;
+}
+
+.contents-item {
+  float: left;
+  padding-left:70px;
+  width:17%;
+}
+
+.contents-item p {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom:30px;
+  color:white;
+}
+
+.contact-form {
+  padding-top: 60px;
+}
+.section-title {
+  border-bottom: 3px solid white;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+input{
+  
+  width:1000px;
+  margin-top:10px;
+  margin-bottom:30px;
+  margin-left:80px;
+  margin-right:80px;
+  padding:30px 70px;
+ font-size:18px;
+ border:2px solid black;
+}
+
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 250px;
+  padding: 40px;
+}
+.footer-logo {
+  font-size: 28px;
+}
+.footer-icon{
+	padding-right:30px;
+	color:white;
+	font-size:25px;
+	float:right;
+}
+.coment{
+	margin-top:160px;
+	border-top:2px solid white;
+	font-size:22px;
+}
+
+
